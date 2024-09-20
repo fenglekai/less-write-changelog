@@ -5,11 +5,10 @@
 
 - gulp workflow
 - rollup+esbuild building
-- not todo npm install
 
 
 
 ## 特征
 
-- 无需安装直接使用的changelog生成插件
 - 集成commonjs/esmodule构建
+- 轻量的预设生成changelog/release文档
