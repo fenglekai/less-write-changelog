@@ -30,6 +30,9 @@
     "type": "git",
     "url": "git+https://github.com/fenglekai/less-write-changelog.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "node ./src/index.js",
     "build": "gulp -f build/gulpfile.js",
