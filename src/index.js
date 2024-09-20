@@ -20,6 +20,7 @@ conventionalChangelogCore({
     process.exit(1);
   })
   .pipe(createWriteStream(changelogFile));
+console.log('✔️ gen changelog complete');
 
 conventionalChangelogCore({
   config: createPreset(false),
@@ -34,3 +35,4 @@ conventionalChangelogCore({
     process.exit(1);
   })
   .pipe(createWriteStream(releaseFile));
+  console.log('✔️ gen release complete');

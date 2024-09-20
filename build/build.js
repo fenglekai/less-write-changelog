@@ -35,21 +35,10 @@ async function buildFullEntry(minify) {
   });
   await writeBundles(bundle, [
     {
-      format: "umd",
-      file: path.resolve(
-        leOutput,
-        formatBundleFilename("index", minify, "js")
-      ),
-      exports: "named",
-      name: "LessWriteChangelog",
-      sourcemap: minify,
-      banner,
-    },
-    {
       format: "esm",
       file: path.resolve(
         leOutput,
-        formatBundleFilename("index", minify, "mjs")
+        formatBundleFilename("index", minify, "js")
       ),
       sourcemap: minify,
       banner,

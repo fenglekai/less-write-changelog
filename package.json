@@ -18,12 +18,7 @@
   "bin": {
     "less-write-changelog": "./index.js"
   },
-  "exports": {
-    ".": {
-      "import": "./index.mjs",
-      "require": "./index.js"
-    }
-  },
+  "exports": "./index.js",
   "jsdelivr": "./index.js",
   "unpkg": "./index.js",
   "repository": {
@@ -36,8 +31,8 @@
   "scripts": {
     "dev": "node ./src/index.js",
     "build": "gulp -f build/gulpfile.js",
-    "clean": "rimraf dist",
-    "publish": "cd dist && npm publish && cd .."
+    "preview": "node ./dist/index.js",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "compare-func": "^2.0.0",

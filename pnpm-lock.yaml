@@ -42,7 +42,6 @@ importers:
       rollup-plugin-esbuild:
         specifier: ^6.1.1
         version: 6.1.1(esbuild@0.23.1)(rollup@4.22.0)
-    publishDirectory: package
 
 packages:
 
