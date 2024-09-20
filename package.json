@@ -1,5 +1,5 @@
 {
-  "name": "@less-write/changelog",
+  "name": "less-write-changelog",
   "type": "module",
   "version": "1.0.0",
   "description": "Custom preset for conventional-changelog.",

@@ -12,7 +12,7 @@ export async function createPreset() {
 }
 
 const main = () => {
-  console.log("🚀start gen changelog");
+  console.log("🚀 start generate changelog");
   conventionalChangelogCore({ config: createPreset(), releaseCount: 0 }).pipe(
     process.stdout
   );
