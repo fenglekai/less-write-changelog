@@ -2,6 +2,7 @@
   "name": "less-write-changelog",
   "type": "module",
   "version": "1.0.1",
+  "packageManager": "pnpm@9.6.0",
   "description": "Custom preset for conventional-changelog.",
   "author": "fenglekai",
   "license": "MIT",
