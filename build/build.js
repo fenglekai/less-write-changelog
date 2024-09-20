@@ -5,11 +5,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import esbuild, { minify as minifyPlugin } from "rollup-plugin-esbuild";
 import json from "@rollup/plugin-json";
 import { target, banner, leOutput, projRoot } from "./constants.js";
-import {
-  writeBundles,
-  formatBundleFilename,
-  withTaskName,
-} from "./utils.js";
+import { writeBundles, formatBundleFilename, withTaskName } from "./utils.js";
 
 async function buildFullEntry(minify) {
   const plugins = [
@@ -42,7 +38,7 @@ async function buildFullEntry(minify) {
       format: "umd",
       file: path.resolve(
         leOutput,
-        formatBundleFilename("index.full", minify, "js")
+        formatBundleFilename("index", minify, "js")
       ),
       exports: "named",
       name: "LessWriteChangelog",
@@ -53,7 +49,7 @@ async function buildFullEntry(minify) {
       format: "esm",
       file: path.resolve(
         leOutput,
-        formatBundleFilename("index.full", minify, "mjs")
+        formatBundleFilename("index", minify, "mjs")
       ),
       sourcemap: minify,
       banner,

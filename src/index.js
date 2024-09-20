@@ -1,23 +1,36 @@
-import { createParserOpts } from "./parser.js";
-import { createWriterOpts } from "./writer.js";
-import { whatBump } from "./whatBump.js";
 import conventionalChangelogCore from "conventional-changelog-core";
+import createPreset from "./preset.js";
+import { createWriteStream } from "fs";
 
-export async function createPreset() {
-  return {
-    parser: createParserOpts(),
-    writer: await createWriterOpts(),
-    whatBump,
-  };
-}
+console.log("🚀 start generate changelog");
 
-const main = () => {
-  console.log("🚀 start generate changelog");
-  conventionalChangelogCore({ config: createPreset(), releaseCount: 0 }).pipe(
-    process.stdout
-  );
-};
+let changelogFile = "CHANGELOG.md";
+let releaseFile = "RELEASE.md";
 
-main()
+conventionalChangelogCore({
+  config: createPreset(),
+  releaseCount: 0,
+})
+  .on("error", (err) => {
+    if (flags.verbose) {
+      console.error(err.stack);
+    } else {
+      console.error(err.toString());
+    }
+    process.exit(1);
+  })
+  .pipe(createWriteStream(changelogFile));
 
-export default main
+conventionalChangelogCore({
+  config: createPreset(false),
+  releaseCount: 2,
+})
+  .on("error", (err) => {
+    if (flags.verbose) {
+      console.error(err.stack);
+    } else {
+      console.error(err.toString());
+    }
+    process.exit(1);
+  })
+  .pipe(createWriteStream(releaseFile));

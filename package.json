@@ -3,36 +3,38 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Custom preset for conventional-changelog.",
+  "author": "fenglekai",
+  "license": "MIT",
   "keywords": [
     "conventional-changelog",
     "custom",
-    "preset"
+    "preset",
+    "github",
+    "release"
   ],
   "engines": {
     "node": ">=18"
   },
   "bin": {
-    "less-write-changelog": "./index.full.js"
+    "less-write-changelog": "./index.js"
   },
   "exports": {
     ".": {
-      "import": "./index.full.mjs",
-      "require": "./index.full.js"
+      "import": "./index.mjs",
+      "require": "./index.js"
     }
   },
-  "publishConfig": {
-    "directory": "package",
-    "linkDirectory": false
+  "jsdelivr": "./index.js",
+  "unpkg": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenglekai/less-write-changelog.git"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "node ./src/index.js",
     "build": "gulp -f build/gulpfile.js",
     "clean": "rimraf dist",
-    "prepublishOnly": "run clear clean-publish",
-    "postpublish": "pnpm clear"
+    "publish": "cd dist && npm publish && cd .."
   },
   "dependencies": {
     "compare-func": "^2.0.0",
