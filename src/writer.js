@@ -56,6 +56,8 @@ function getWriterOpts () {
         type = '👷‍ Build System | 构建'
       } else if (commit.type === 'ci') {
         type = '🔧 Continuous Integration | CI 配置'
+      } else if (commit.type === 'chore') {
+        type = '🔨 Chore | 构建过程或辅助工具的变动'
       } else if (discard) {
         return
       }
