@@ -18,8 +18,7 @@
 ## 快速开始
 
 ```shell
-npm i -D less-write-changlelog
-less-write-changlelog
+npx less-write-changelog
 # 将生成RELEASE.md与CHANGELOG.md文件
 ```
 
@@ -57,8 +56,7 @@ jobs:
 
       - name: Gen release file
         run: |
-          npm i less-write-changlelog
-          less-write-changlelog
+          npx less-write-changelog
 
       - name: Release to Github
         uses: softprops/action-gh-release@v2
