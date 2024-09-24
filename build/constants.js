@@ -7,4 +7,4 @@ export const leOutput = resolve(projRoot,"dist");
 export const lePackage = resolve(projRoot, "package.json");
 
 export const target = "esnext";
-export const banner = `/*! Less Write Changelog v${pkg.version} */\n`;
+export const banner = `#!/usr/bin/env node\n/*! Less Write Changelog v${pkg.version} */\n`;
