@@ -1,3 +1,31 @@
+## [1.0.3](https://github.com/fenglekai/less-write-changelog/compare/v1.0.2...v1.0.3) (2024-09-24)
+
+### ✨ Features | 新功能
+
+* 🎸 取消对changelog的git忽略 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/b0af037d1858bcc2a13dece717688cd33217e6b3))
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 🐛 在头部添加shell执行node脚本注释 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/19b9b0e6ad11dcfdea9931271933718e1a1f461d))
+
+### 📝 Documentation | 文档
+
+* ✏️ 更新说明文档 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/854ad58ad32572ce7fc4d05421c772274907ea27))
+
+### 🔧 Continuous Integration | CI 配置
+
+* 🎡 添加构建文件到release;ci过程添加changelog的提交 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/40c4377a7c51215d2ac049961b544eaf5ee72dbe))
+
+## [1.0.2](https://github.com/fenglekai/less-write-changelog/compare/v1.0.1...v1.0.2) (2024-09-20)
+
+### 🔧 Continuous Integration | CI 配置
+
+* 🎡 新增github action文件 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/3b648092fff7e020fa4fa025d3b3f3db428d38e5))
+
+### 🔨 Chore | 构建过程或辅助工具的变动
+
+* 🤖 添加publish脚本 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/ef954ba0ca4d7407f83d3a7bbf22947a50be4455))
+
 ## [1.0.1](https://github.com/fenglekai/less-write-changelog/compare/v1.0.0...v1.0.1) (2024-09-20)
 
 ### 🐛 Bug Fixes | Bug 修复

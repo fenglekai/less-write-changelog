@@ -17,7 +17,7 @@
     "node": ">=18"
   },
   "bin": {
-    "less-write-changelog": "./index.js"
+    "less-write-changelog": "index.js"
   },
   "exports": "./index.js",
   "jsdelivr": "./index.js",
