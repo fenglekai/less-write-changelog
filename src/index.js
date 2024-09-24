@@ -1,16 +1,21 @@
 import conventionalChangelogCore from "conventional-changelog-core";
 import createPreset from "./preset.js";
 import { createWriteStream } from "fs";
+import { gitRawCommitsOpts } from "./gitRawCommits.js";
 
 console.log("🚀 start generate changelog");
 
 let changelogFile = "CHANGELOG.md";
 let releaseFile = "RELEASE.md";
 
-conventionalChangelogCore({
-  config: createPreset(),
-  releaseCount: 0,
-})
+conventionalChangelogCore(
+  {
+    config: createPreset(),
+    releaseCount: 0,
+  },
+  null,
+  gitRawCommitsOpts
+)
   .on("error", (err) => {
     if (flags.verbose) {
       console.error(err.stack);
@@ -20,12 +25,16 @@ conventionalChangelogCore({
     process.exit(1);
   })
   .pipe(createWriteStream(changelogFile));
-console.log('✔️ gen changelog complete');
+console.log("✔️ gen changelog complete");
 
-conventionalChangelogCore({
-  config: createPreset(false),
-  releaseCount: 2,
-})
+conventionalChangelogCore(
+  {
+    config: createPreset(false),
+    releaseCount: 2,
+  },
+  null,
+  gitRawCommitsOpts
+)
   .on("error", (err) => {
     if (flags.verbose) {
       console.error(err.stack);
@@ -35,4 +44,4 @@ conventionalChangelogCore({
     process.exit(1);
   })
   .pipe(createWriteStream(releaseFile));
-  console.log('✔️ gen release complete');
+console.log("✔️ gen release complete");
