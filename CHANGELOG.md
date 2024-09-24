@@ -1,3 +1,18 @@
+## [1.0.4](https://github.com/fenglekai/less-write-changelog/compare/v1.0.3...v1.0.4) (2024-09-24)
+
+### ✅ Tests | 测试
+
+* 💍 vscode debug config ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/13ffdbd25f4ccf2db97ade660cb99a83baf462bd))
+
+### ✨ Features | 新功能
+
+* 🎸 手动推送1.0.3与npm pkg fix修复 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/ff9a5070dd4ac80917b611e25e960021716aad20))
+* 🎸 显示正确的commit对应作者 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/beafc706d612271c010fcc330ce4b8ade0537dda))
+
+### 📝 Documentation | 文档
+
+* ✏️ 更新README ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/0e20b35057095110ecc67fac80da5469887de58b))
+
 ## [1.0.3](https://github.com/fenglekai/less-write-changelog/compare/v1.0.2...v1.0.3) (2024-09-24)
 
 ### ✨ Features | 新功能
@@ -36,8 +51,8 @@
 
 ### ♻ Code Refactoring | 代码重构
 
-* 💡 更新package名称 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/f43adb5ee0bc634f6d822b0729dee087de01417a))
 * 💡 删除html文件 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/68e8fcda6eb5ba3c1fc1326eeb75915952d9e8c3))
+* 💡 更新package名称 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/f43adb5ee0bc634f6d822b0729dee087de01417a))
 
 ### ✨ Features | 新功能
 
@@ -54,6 +69,6 @@
 
 ### 🔨 Chore | 构建过程或辅助工具的变动
 
-* 🤖 删除vite与其相关插件,改用gulp+rollup+esbuild构建 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/5ceae101f9030d1c8f0389d9ce7998f5e056399d))
 * 🤖 set access public ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/2863494375bc7ee184517388a090cd6461414f70))
+* 🤖 删除vite与其相关插件,改用gulp+rollup+esbuild构建 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/5ceae101f9030d1c8f0389d9ce7998f5e056399d))
 
