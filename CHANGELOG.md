@@ -1,3 +1,13 @@
+## [1.0.5](https://github.com/fenglekai/less-write-changelog/compare/v1.0.4...v1.0.5) (2024-09-25)
+
+### ✨ Features | 新功能
+
+* 🎸 chore输出文字变更;不再输出未发布的commit => outputUnrelease = false ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/bdc4b6ebe20ee3e878c9d1767e8a28ac0f031b1f))
+
+### 📝 Documentation | 文档
+
+* **CHANGELOG:** update changelog [skip ci] ([github-actions[bot]](https://github.com/fenglekai/less-write-changelog/commit/8d18f5859a0e3f453a4b89b05d750c5d517c9cdf))
+
 ## [1.0.4](https://github.com/fenglekai/less-write-changelog/compare/v1.0.3...v1.0.4) (2024-09-24)
 
 ### ✅ Tests | 测试
@@ -37,7 +47,7 @@
 
 * 🎡 新增github action文件 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/3b648092fff7e020fa4fa025d3b3f3db428d38e5))
 
-### 🔨 Chore | 构建过程或辅助工具的变动
+### 🔨 Choreographic Tasks | 构建/工具的变动
 
 * 🤖 添加publish脚本 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/ef954ba0ca4d7407f83d3a7bbf22947a50be4455))
 
@@ -67,7 +77,7 @@
 
 * ✏️ 说明文档更新 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/0c47d8324ad8d427e2897953fab8d8d5cb2401f9))
 
-### 🔨 Chore | 构建过程或辅助工具的变动
+### 🔨 Choreographic Tasks | 构建/工具的变动
 
 * 🤖 set access public ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/2863494375bc7ee184517388a090cd6461414f70))
 * 🤖 删除vite与其相关插件,改用gulp+rollup+esbuild构建 ([fenglekai](https://github.com/fenglekai/less-write-changelog/commit/5ceae101f9030d1c8f0389d9ce7998f5e056399d))
