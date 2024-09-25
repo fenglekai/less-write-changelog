@@ -59,7 +59,7 @@ function getWriterOpts() {
       } else if (commit.type === "ci") {
         type = "🔧 Continuous Integration | CI 配置";
       } else if (commit.type === "chore") {
-        type = "🔨 Chore | 构建过程或辅助工具的变动";
+        type = "🔨 Choreographic Tasks | 构建/工具的变动";
       } else if (discard) {
         return;
       }

@@ -12,6 +12,7 @@ conventionalChangelogCore(
   {
     config: createPreset(),
     releaseCount: 0,
+    outputUnreleased: false,
   },
   null,
   gitRawCommitsOpts
