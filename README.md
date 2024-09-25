@@ -10,7 +10,7 @@
 
 ## 特征
 
-- 集成commonjs/esmodule构建
+- 集成ESModule构建
 - 轻量的预设生成changelog/release文档
 
 
