@@ -61,7 +61,7 @@ function getWriterOpts() {
       } else if (commit.type === "chore") {
         type = "🔨 Choreographic Tasks | 构建/工具的变动";
       } else if (discard) {
-        return;
+        type = "🌈 Commits | 其他提交";
       }
 
       const scope = commit.scope === "*" ? "" : commit.scope;
