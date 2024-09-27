@@ -114,7 +114,13 @@ function getWriterOpts() {
       };
     },
     groupBy: "type",
-    commitGroupsSort: "title",
+    commitGroupsSort: (a, b) => {
+      let flag = compareFunc("title")(a, b);
+      if (b.title === "🌈 Commits | 其他提交") {
+        flag = -1;
+      }
+      return flag;
+    },
     commitsSort: ["scope", "subject"],
     noteGroupsSort: "title",
     notesSort: compareFunc,
