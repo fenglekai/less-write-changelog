@@ -1,6 +1,6 @@
 import { spawn } from "child_process";
 import chalk from "chalk";
-import { projRoot, lePackage } from "./constants.js";
+import { projRoot } from "./constants.js";
 
 export function writeBundles(bundle, options) {
   return Promise.all(options.map((option) => bundle.write(option)));

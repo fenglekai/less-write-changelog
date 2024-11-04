@@ -7,7 +7,6 @@ import buildFullBundle from "./build.js";
 
 const sourceTemplatesFolder = path.resolve(projRoot, "src/templates/*.hbs");
 const templatesFolder = path.resolve(leOutput, "templates");
-console.log(sourceTemplatesFolder);
 
 export const copyFiles = () =>
   Promise.all([
@@ -22,7 +21,7 @@ export default series(
   withTaskName("clean", () => run("pnpm run clean")),
   withTaskName("createOutput", () => mkdir(leOutput, { recursive: true })),
 
-  parallel(withTaskName("buildFullBundle", buildFullBundle)),
+  withTaskName("buildFullBundle", buildFullBundle),
 
   parallel(
     copyFiles,
